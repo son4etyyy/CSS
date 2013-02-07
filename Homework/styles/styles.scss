@@ -1,0 +1,168 @@
+@mixin linear-gradient(){
+background: #d593ff; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxMyUiIHN0b3AtY29sb3I9IiNkNTkzZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxNyUiIHN0b3AtY29sb3I9IiNjNjhjZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIyNiUiIHN0b3AtY29sb3I9IiNhNDM5ZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzMSUiIHN0b3AtY29sb3I9IiM4ZjFhZWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzNCUiIHN0b3AtY29sb3I9IiM5MjE1ZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOTIxNWYyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==) fixed;
+background: -moz-linear-gradient(top,  #d593ff 13%, #c68cf2 17%, #a439f4 26%, #8f1aef 31%, #9215f2 34%, #9215f2 100%) fixed; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(13%,#d593ff), color-stop(17%,#c68cf2), color-stop(26%,#a439f4), color-stop(31%,#8f1aef), color-stop(34%,#9215f2), color-stop(100%,#9215f2)) fixed; /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d593ff 13%,#c68cf2 17%,#a439f4 26%,#8f1aef 31%,#9215f2 34%,#9215f2 100%) fixed; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d593ff 13%,#c68cf2 17%,#a439f4 26%,#8f1aef 31%,#9215f2 34%,#9215f2 100%) fixed; /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d593ff 13%,#c68cf2 17%,#a439f4 26%,#8f1aef 31%,#9215f2 34%,#9215f2 100%) fixed; /* IE10+ */
+background: linear-gradient(to bottom,  #d593ff 13%,#c68cf2 17%,#a439f4 26%,#8f1aef 31%,#9215f2 34%,#9215f2 100%) fixed; /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d593ff', endColorstr='#9215f2',GradientType=0 ) fixed; /* IE6-8 */
+}
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+margin: 0;
+padding: 0;
+border: 0;
+}
+body
+{
+width: 100%;
+color: white;
+font: 14px normal Arial;
+@include linear-gradient;
+	a{
+	 &:hover{
+        text-decoration: underline;
+		}
+	}
+	footer{
+		p{
+		clear:both;
+		font-size: 1.2em;
+		font-weight: bold;
+		text-align: center;
+		}
+	}
+
+}
+#reg-form-container{
+float: right;
+margin: 20px 40px;
+position: relative;
+}
+
+input{
+	border: 1px solid gray;
+	border-radius: 10px;
+	height: 20px;
+	margin: 5px;
+	background: #b35ef3;
+}
+#btn-register{
+	border: 1px solid gray;
+	border-style: outset;
+	background: #b35ef3;
+	border-radius: 10px;
+	width: 85px;
+	height: 30px;
+	color: white;
+}
+
+#logo-container{
+float: left;
+margin: 25px;
+}
+#header-container{
+height: 100px;
+}
+nav{
+		margin: 70px 25px 25px;
+		width: 80%;
+		display: block;
+	#main-nav-list{
+		border: solid black 1px;
+		border-radius: 13px;
+		overflow: hidden;
+			li{
+				float: left;
+				list-style: none;
+				padding-left: 15px;
+				padding-top: 10px;
+				a{
+				padding-left: 10px;
+				font: 1.4em normal Arial;
+				text-decoration: none;
+				text-aling: left;
+				color: #fff;
+
+				}
+				ul{
+				max-width: 250px;
+				position: absolute;
+				background-color: #d4a3f7;
+				border-radius: 5px;			
+				display: none;
+					li{
+					float: none;
+					margin: 0 15px;
+					padding: 10px 0;
+					border-bottom: 1px solid black;
+					}
+				}
+			&:hover ul{
+			display: block;
+			}
+			}
+		}
+}
+p{
+	a{
+	text-decoration: none;
+	color: #ccccd1;
+	}
+}
+section{
+	width: 70%;
+	overflow: hidden;
+	float: left;
+		article{
+			border: solid black 1px;
+			border-radius: 13px;
+			display: inline-block;
+			margin: 20px;
+			padding: 25px;
+			footer{
+				p
+				{
+					float: right;
+					font-size: 1em;
+					font-weight: normal;
+				}
+				a{
+				text-decoration: none;
+				color: #d4a3f7;
+				}
+			}
+		}
+}
+
+aside{
+float: left;
+width: 300px;
+padding: 5px;
+	ul{
+		list-style: none;
+		li{
+		border: solid black 1px;
+		border-radius: 6px;
+		margin: 10px;
+		padding: 10px;
+		h2{
+		display: block;
+		font-size: 1.2em;
+		padding: 10px;
+		}
+			ul{
+			clear: both;
+				li{	
+				padding: 0px;
+				margin: 5px;
+				border: none;
+				background: url('images/li-dot.png');
+				padding-left: 30px;
+				}
+			}
+		}
+	}
+}
