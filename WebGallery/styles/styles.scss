@@ -1,0 +1,35 @@
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+.mini-gallery{
+	ul{
+		li{
+			display: inline-block;
+			margin: 5px;
+		&:hover > img{
+			cursor: hand;
+		}
+		}
+	}
+}
+.hidden{
+	margin: 5px;
+	display:inline-block;
+	position:absolute;
+	opacity: 0;
+}
+.large-gallery{
+	input[type="radio"]{
+		display: none;
+		&:checked + .hidden{
+			opacity: 1;
+			-webkit-transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-o-transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.5s ease-in-out;
+		}
+	}
+}
